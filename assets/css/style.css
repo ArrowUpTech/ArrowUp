@@ -153,7 +153,8 @@ html {
 
 body {
   /* background-color: var(--white); */
-  background-color: hsl(0deg 0% 18.9%);
+  /* background-color: hsl(0deg 0% 18.9%); */
+  background-color: #16181d;
   color: var(--gray-web);
   font-size: 1.6rem;
   line-height: 1.75;
@@ -861,7 +862,8 @@ body {
 .footer {
   background-repeat: no-repeat;
   /* background-color: var(--eerie-black-2); */
-  background-color: hsl(0deg 0% 18.9%);
+  /* background-color: hsl(0deg 0% 18.9%); */
+  background-color: #16181d;
   color: var(--gray-x-11);
   font-size: var(--fs-5);
 }
@@ -1408,5 +1410,9 @@ body {
 }
 
 .h3 a{
-  color: hsl(351, 100%, 71%);
+  color: hsl(0, 0%, 0%);
+}
+
+.h3colorchange a{
+  color: hsl(0, 100%, 73%);
 }
