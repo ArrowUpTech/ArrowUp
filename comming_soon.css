@@ -1,0 +1,122 @@
+body {
+    background-color: #16181d;
+    color: #fff;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+  
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+    
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  .dot {
+    color: #4FEBFE;
+  }
+  
+  p {
+    text-align: center;
+    margin: 18px;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    
+  }
+  
+  .icons {
+    text-align: center;
+    
+  }
+  
+  .icons i {
+    color: #00091B;
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    padding: 13px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    transition: all 200ms ease;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .icons i:hover, .icons i:active {
+    color: #fff;
+    background: none;
+    cursor: pointer !important;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    text-decoration: none;
+    
+  }
+
+
+  /* new css */
+
+  /* new module css */
+
+  @import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #16181d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-family: 'Nova Mono', monospace;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    width: 1109px;
+    height: 365px;
+    color: turquoise;
+  }
+  
+  .char {
+    offset-path: path('M.2 219.6c247-107 233.3 91.4 406.4 138.4C659.2 426.6 750.2 6.6 552.2.6 337.7-5.9 426.9 415 696.1 359.4c256.1-52.9 182.1-217.9 413.1-163.9');
+    offset-distance: calc(var(--char-index) * 1.5rem);
+    position: absolute;
+    animation: loop 3500ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 10ms);
+  }
+  
+  @keyframes loop {
+    50% {
+      offset-distance: calc((var(--char-index) * 2.5rem) + 700px);
+      color: hotpink;
+    }
+    100% {
+      offset-distance: calc((var(--char-index) * 1.5rem) + 1690px);
+    }
+  }
